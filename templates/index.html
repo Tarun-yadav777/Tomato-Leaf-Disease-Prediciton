@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+  <a class="navbar-brand" href="/">
+      <img src="{{ url_for('static', filename='tomato.svg') }}" alt="" width="30" height="24">
+    </a>
+    <a class="navbar-brand">Tomato Leaf Disease Detection</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Model Used
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/xception">Xception</a></li>
+            <li><a class="dropdown-item" href="/inceptionv3">Inception V3</a></li>
+            <li><a class="dropdown-item" href="/resnet50">ResNet50</a></li>
+          </ul>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sources
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://www.kaggle.com/">Kaggle</a></li>
+            <li><a class="dropdown-item" href="https://keras.io/api/applications/">Keras Documentation</a></li>
+            <li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+          </ul>
+      </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tarun Yadav
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/tarun-yadav-47442112b/">linkedIn</a></li>
+            <li><a class="dropdown-item" href="https://github.com/Tarun-yadav777">GitHub</a></li>
+            <li><a class="dropdown-item" href="https://twitter.com/taronic777">Twitter</a></li>
+          </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="{{ url_for('static', filename='img1.jpg') }}" style="height: 300px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2><b>Deep Learning</b></h2>
+        <p><h4><b>Deep learning is an AI function that mimics the workings of the human brain
+             in processing data for use in detecting objects, recognizing speech, translating languages,
+              and making decisions.</b></h4></p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="{{ url_for('static', filename='img2.jpg') }}" style="height: 300px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2><b>Transfer Learning Models</b></h2>
+        <p><h5><b>Transfer learning generally refers to a process where a model trained on one problem is used in some way on a second related problem..Transfer learning models used in this Problem state are: <ul>
+                                                                <li>Xception</li>
+                                                                <li>InceptionV3</li>
+                                                                <li>ResNet50</li>
+                                                                </ul></b></h5></p>
+      </div>
+    </div>
+    <div class="carousel-item"  data-bs-interval="5000">
+      <img src="{{ url_for('static', filename='img3.jpg') }}" style="height: 300px;" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2><b>Tomato Leaf Disease Detection</b></h2>
+        <p style='color:white;'><h5><b>This Problem Statement been taken from Kaggle and then a model is created using transfer learning
+             pre-trained model from keras.</b></h5></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
+
+<div class="card-group">
+  <div class="card">
+    <img src="{{ url_for('static', filename='xception.jpg') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Xception</h5>
+      <p class="card-text">Xception is a convolutional neural network that is 71 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database.</p>
+    </div>
+      <div class="card-body">
+    <p>Click For API Documentation:-</p>
+    <a href="https://keras.io/api/applications/xception/" class="card-link">Xception</a>
+  </div>
+    <div class="card-footer">
+      <a href="/xception" class="btn btn-primary">Go, Predict!</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static', filename='inceptionv3.png') }}" class="card-img-top" alt="{{ url_for('static', filename='inceptionv3.jpg') }}">
+    <div class="card-body">
+      <h5 class="card-title">InceptionV3</h5>
+      <p class="card-text">Inception-v3 is a convolutional neural network that is 48 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database. </p>
+    </div>
+      <div class="card-body">
+    <p>Click For API Documentation:-</p>
+    <a href="https://keras.io/api/applications/inceptionv3/" class="card-link">IneptionV3</a>
+  </div>
+    <div class="card-footer">
+      <a href="/inceptionv3" class="btn btn-primary">Go, Predict!</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="{{ url_for('static', filename='resnet50.png') }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">ResNet50</h5>
+      <p class="card-text">ResNet-50 is a convolutional neural network that is 50 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database.</p>
+    </div>
+      <div class="card-body">
+    <p>Click For API Documentation:-</p>
+    <a href="https://keras.io/api/applications/resnet/#resnet50" class="card-link">ResNet50</a>
+  </div>
+    <div class="card-footer">
+      <a href="/resnet50" class="btn btn-primary">Go, Predict!</a>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3" style="max-width: 800px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='0.png') }}" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body" id="side">
+        <h5 class="card-title">Model Analysis</h5>
+        <p class="card-text">Picture on the left shows the Accuracy of model on our problem dataset.</p>
+      <div class="card-body">
+        <p>Click For More Analysis of PowerBI:-</p>
+        <a href="" class="card-link">PowerBI Model Analysis</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
