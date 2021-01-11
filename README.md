@@ -15,8 +15,8 @@ You're sections headers will be used to reference location of destination.
 ### Demo
 
 ![Project Image](static/home.PNG)
-![Project Image](static/model_analysis.png)
-![Project Image](static/prediction.png)
+![Project Image](static/model_analysis.PNG)
+![Project Image](static/prediction.PNG)
 > Above are the pictures of the web site of the Project.
 
 ---
