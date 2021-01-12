@@ -62,7 +62,7 @@ Google
 ## Tool Used
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 [<img target="_blank" src="https://keras.io/img/logo.png" width=200>](https://keras.io/)  [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>]
-[<img target="_blank" src="https://seekvectorlogo.com/power-bi-vector-logo-svg/>](https://powerbi.microsoft.com/en-us/)
+[<img target="_blank" src="https://seekvectorlogo.com/power-bi-vector-logo-svg/">](https://powerbi.microsoft.com/en-us/)
 
 [Back To The Top](#read-me-template)
 
