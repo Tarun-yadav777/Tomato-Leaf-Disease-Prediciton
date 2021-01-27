@@ -29,7 +29,7 @@ This is a Flask app for Tomato Leaf Disease Predicton trained on 3 Transfer Lear
     2. InceptionV3
     3. ResNet50 
 These Models are trained on over 1.2 million picture for the classification of around 1000 categories with million trainable parameters.
-Also created a cheatsheet of all 3 models performance and analyse them using Power BI. 
+Also created a cheatsheet of all 3 models performance and analyse them using Power-BI. 
 
 #### Technologies
 
